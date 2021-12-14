@@ -1,0 +1,3 @@
+create sequence hibernate_sequence start with 1 increment by 1;
+create table products (product_id integer not null, available boolean not null, description varchar(255), measurement_unit varchar(255), name varchar(200), price double, primary key (product_id));
+insert into Products(product_Id, name, description, price, measurement_unit, available) values (1, 'HairOil', 'Dabur Oil', 200.00, '100 ml', true);
